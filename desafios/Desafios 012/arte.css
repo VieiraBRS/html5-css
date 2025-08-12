@@ -2,14 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: 'noconteudo';
+    src: url(fontes/sriracha/Sriracha-Regular.ttf);
+}
+@font-face {
+    font-family: 'nocabecalho';
+    src: url(fontes/Passion_One1/PassionOne-Bold.ttf);
+}
 
 body{
     background-color: darkgray;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 
 header{
-    font-size: 24px;
     background-color: black;
     color: white;
     text-align: center;
@@ -17,12 +24,15 @@ header{
 }
 
 header > h1{
+    font-family: 'nocabecalho';
     margin: 0px;
     padding-top: 30px;
     font-variant: small-caps;
+    font-size: 3vw 
 }
 
 header > h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0px;
     padding: 10px;
@@ -38,6 +48,8 @@ a:hover{
 }
 
 section{
+    font-family: 'noconteudo';
+    font-size: 2vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -52,10 +64,12 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.144);
 }
 footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     text-align: center;
     color: white;
